@@ -4,9 +4,20 @@ import '../App.css'
 
 import divider from '../assets/images/pattern-divider-mobile.svg'
 import diceIcon from '../assets/images/icon-dice.svg'
+import { ToastContainer } from 'react-toastify'
+
+
+// Imports
+import getAdvice from '../helper/requestCall'
 
 export default function Advice(){
     return(
+       <>
+       <ToastContainer
+       position='top-center'
+       autoClose={2000}
+       
+       />
         <div className='h-3/5 flex flex-col justify-center items-center '>
     <div className='gap-12 bg rounded-xl w-5/12 flex flex-col justify-center items-center h-96 '>
         <p className="text-neon"> Advice #1</p>
@@ -18,10 +29,11 @@ export default function Advice(){
         </div>
     </div>
     <div className='flex flex-row justify-center items-center bg-neon -mt-8 w-16 h-16 rounded-full'>
-       <button> <img src={diceIcon} /></button>
+       <button onClick={getAdvice}> <img id="diceIcon" src={diceIcon} /></button>
     </div>
        
     </div>
+    </>
     )
   
 }

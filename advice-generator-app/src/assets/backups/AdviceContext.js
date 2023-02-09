@@ -10,7 +10,7 @@ const AdviceContext= createContext();
 export const AdviceProvider = ({children}) => {
 
     const initialState= {
-        advice:[],
+        advice:"",
         count:0
 
     }

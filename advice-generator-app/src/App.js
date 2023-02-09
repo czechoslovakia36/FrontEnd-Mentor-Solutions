@@ -6,7 +6,13 @@ import Advice from './component/Advice';
 
 import { AdviceProvider } from './context/AdviceContext';
 
+
 function App() {
+
+  
+
+
+
   return (
    
     <AdviceProvider>

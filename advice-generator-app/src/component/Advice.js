@@ -7,10 +7,14 @@ import diceIcon from '../assets/images/icon-dice.svg'
 import { ToastContainer } from 'react-toastify'
 
 
+
+
+
 // Imports
 import getAdvice from '../helper/requestCall'
 
 export default function Advice(){
+   
     return(
        <>
        <ToastContainer

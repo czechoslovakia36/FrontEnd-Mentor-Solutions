@@ -1,0 +1,20 @@
+html,body{
+    background: hsl(218, 23%, 16%);
+    height:100%
+}
+
+#root{
+    height: 100%;
+}
+
+.bg{
+    background:hsl(217, 19%, 24%)
+}
+
+.bg-neon {
+    background: hsl(150, 100%, 66%);
+}
+
+.text-neon {
+    color: hsl(150, 100%, 66%)
+}

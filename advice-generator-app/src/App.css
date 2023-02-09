@@ -19,8 +19,13 @@ html,body{
     color: hsl(150, 100%, 66%)
 }
 
+#diceIcon{
+    transition: transform .7s ease-in-out;
+}
+
 #diceIcon:hover{
     /* animation: rotate 1s linear; */
+    transform: rotate(360deg);
 
 }
 

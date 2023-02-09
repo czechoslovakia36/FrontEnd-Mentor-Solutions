@@ -4,11 +4,19 @@ import './index.css'
 
 import Advice from './component/Advice';
 
+import { AdviceProvider } from './context/AdviceContext';
+
 function App() {
   return (
-   <>
-    <Advice></Advice>
-   </>
+   
+    <AdviceProvider>
+          <Advice></Advice>
+ 
+    </AdviceProvider>
+
+    
+   
+   
   )
 }
 

@@ -18,7 +18,7 @@ import { useContext } from 'react'
 
 export default function Advice(){
 
-    const {count,increment} = useContext(AdviceContext);
+    const {count,fetchAdvice,advice} = useContext(AdviceContext);
    
     return(
        <>
@@ -31,14 +31,14 @@ export default function Advice(){
     <div className='gap-12 bg rounded-xl w-5/12 flex flex-col justify-center items-center h-96 '>
         <p className="text-neon"> Advice #{count}</p>
         <div>
-          <p className='text-center'>"It is easy to sit up and take notice ,what's difficult is getting up and taking action"</p>
+          <p className='text-center'>{advice}</p>
         </div>
         <div>
            <img src ={divider} className="w-96" />
         </div>
     </div>
     <div className='flex flex-row justify-center items-center bg-neon -mt-8 w-16 h-16 rounded-full'>
-       <button onClick={increment}> <img id="diceIcon" src={diceIcon} /></button>
+       <button onClick={fetchAdvice}> <img id="diceIcon" src={diceIcon} /></button>
     </div>
        
     </div>

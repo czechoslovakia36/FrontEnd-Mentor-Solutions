@@ -27,17 +27,17 @@ export default function Advice(){
        autoClose={2000}
        
        />
-        <div className='h-3/5 flex flex-col justify-center items-center '>
-    <div className='gap-12 bg rounded-xl w-5/12 flex flex-col justify-center items-center h-96 '>
-        <p className="text-neon"> Advice #{count}</p>
+        <div className='h-2/5 flex flex-col justify-center items-center mt-8 '>
+    <div className='gap-9 bg rounded-xl w-5/12 flex flex-col justify-center items-center h-96 '>
+        <p className="text-neon fonts"> ADVICE #{count}</p>
         <div>
-          <p className='text-center'>{advice}</p>
+          <p className='text-center fonts mb-7 ' style={{color:'white'}}>"{advice}"</p>
         </div>
         <div>
-           <img src ={divider} className="w-96" />
+           <img src ={divider} className="w-96 -mt-9" />
         </div>
     </div>
-    <div className='flex flex-row justify-center items-center bg-neon -mt-8 w-16 h-16 rounded-full'>
+    <div className='flex flex-row justify-center items-center bg-neon -mt-2 w-12 h-16 rounded-full'>
        <button onClick={fetchAdvice}> <img id="diceIcon" src={diceIcon} /></button>
     </div>
        

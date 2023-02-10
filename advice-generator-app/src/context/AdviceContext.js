@@ -1,14 +1,21 @@
 import { useState,createContext } from "react";
 
 
-const AdviceContext = createContext();
+export const AdviceContext = createContext();
 
 
-// const [user,setUser]= useState(0)
+
 
 
 export const AdviceProvider = ({children}) => {
-    return <AdviceContext.Provider  value="5">
+    const [count,setCount]= useState(0)
+
+        const increment = () => {
+            console.log("i was called")
+            setCount(count+1)
+
+        }
+    return <AdviceContext.Provider  value={{count,increment}}>
         {children}
     </AdviceContext.Provider>
 }

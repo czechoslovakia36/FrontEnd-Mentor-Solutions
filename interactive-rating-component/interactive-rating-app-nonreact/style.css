@@ -94,10 +94,11 @@ button:hover{
 
 i:hover{
     background: hsl(25, 97%, 53%);
-   color: hsl(0, 0%, 100%)
+   color: hsl(0, 0%, 100%);
+   cursor:pointer
 } 
 
-select {
+.select {
     background: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%)
 }

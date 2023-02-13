@@ -98,8 +98,10 @@ i:hover{
    cursor:pointer
 } 
 
-.select {
+.active {
     background: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%)
 }
+
+
 

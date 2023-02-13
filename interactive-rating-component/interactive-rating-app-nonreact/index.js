@@ -2,6 +2,8 @@
 //     console.log(e.target)
 // })
 
+let givenRating=0
+
 const target= document.getElementsByTagName("i")
 
 
@@ -13,7 +15,7 @@ let p = document.getElementsByClassName("no")
 // // alert(e.classList)
 // console.log(e.classList)
 const ratings2= [...p]
-console.log(ratings2[0])
+// console.log(ratings2[0])
 const ratings = [...target]
 
 
@@ -45,11 +47,12 @@ ratings.map(rating => {
        
        rating.classList.add("active")
        index= ratings.indexOf(rating) 
-       console.log(index)
-       console.log(rating)
+    //    console.log(index)
+    //    console.log(rating)
         for (var i=0 ; i<ratings.length;i++){
             if(i==index){
-                
+                givenRating=index+1
+               
             }
             else {
                 ratings[i].classList.remove("active")
@@ -60,6 +63,35 @@ ratings.map(rating => {
     }
 }
    )
+
+// 
+console.log(givenRating)
+
+
+// const url= new URL(`index2.html/?rating=${givenRating}`)
+// const urlParams = new URL("https://example.com/?product=trousers&color=black&newuser&size=s").searchParams;
+
+// for(let p of urlParams){
+//     console.log(p)
+// }
+
+
+
+
+
+function navigate() {
+    // window.location.href=url
+    // const urlParams= new URL(`https://example.com/?rating=${givenRating}`).searchParams
+    // const rating= urlParams.get("rating")
+    var params = new URLSearchParams();
+    params.append("rating",givenRating)
+    var url= "index2.html?"+ params.toString()
+    // console.log(rating)
+    window.location.href=url
+}
+
+
+
 
 
 

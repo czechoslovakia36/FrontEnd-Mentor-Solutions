@@ -1,0 +1,66 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background:hsl(216, 12%, 54%);
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    /* font-size: x-large; */
+   
+  
+}
+
+    .container{
+    /* border: 2px solid red; */
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.2em;
+    color:white;
+    height: 37vh;
+    width: 20%;
+    background:hsl(213, 19%, 18%);
+    justify-content: flex-start;
+    align-items:center;
+    
+
+    /* border: 2px solid white; */
+}
+
+.sub-container > * {
+    margin: 10px;
+} 
+
+.rating{
+    background-color:hsl(217, 12%, 63%);
+    padding: 0.5rem;
+    width: 11rem;
+    height:1rem;
+    border-radius: 10%;
+    color:hsl(25, 97%, 53%);
+    
+    
+}
+
+.faded{
+ opacity: .1;
+ border: 2px solid green;
+ padding: 0.5em;
+ border-radius: 10px;
+ color:hsl(25, 97%, 53%);
+ background-color: hsl(217, 12%, 63%);
+
+}

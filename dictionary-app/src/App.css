@@ -3,7 +3,7 @@
 
 
 html{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,9 +12,16 @@ html{
   
 }
 
+
+/* CSS OF DARK MODE */
+.dark-mode {
+  background-color: black;
+  color:white
+}
+
 .container{
   width:65vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

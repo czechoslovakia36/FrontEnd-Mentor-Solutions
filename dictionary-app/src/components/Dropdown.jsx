@@ -4,7 +4,7 @@ import '../assets/css/dropdown.css'
 
 const Dropdown = () => {
   return (
-    <div class="custom-select">
+    <div className="custom-select">
       <select>
         <option>Serif</option>
         <option>New Roman</option>

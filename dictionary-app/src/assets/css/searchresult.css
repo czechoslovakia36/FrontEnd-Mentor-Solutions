@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Galada&display=swap');
+
+
+:root{
+    --val5:5px;
+    --val10:10px;
+    --val20:20px;
+    --val30:30px;
+    --val40:40px;
+    --val50:50px;
+}
+.container-searchresult{
+    width:65vw;
+    margin-top: 30px;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    display: flex;
+
+}
+
+
+/* Margins  */
+
+.ml-5{
+    margin-left:5px;
+}
+
+.ml-20 {
+    margin-left: var(--val20);
+}
+
+
+.ml-30 {
+    margin-left: var(--val30);
+}
+
+.ml-40{
+    margin-left: var(--val40);
+}
+
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
+
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.font-large{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.font-small{
+    font-size: 1.1rem;
+}
+
+.font-normal{
+    font-size:1.5rem
+}
+
+
+.font-medium{
+    font-size: 2rem;
+}
+
+.font-family-galado{
+   
+    font-family: 'Galada', cursive;
+}
+
+.font-grey{
+    color : rgb(163 163 163);
+}
+
+
+.font-purple-light{
+    color: rgb(167 139 250);
+}
+
+.font-purple-dark{
+    color: rgb(139 92 246);
+}
+
+.block{
+    display: block;
+}
+
+/* Background Styles */
+
+.bg-purple-light{
+    background-color: rgb(167 139 250);
+}
+
+.bg-purple-dark{
+    background-color: rgb(139 92 246);;
+   
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(196 181 253);;
+
+}
+
+hr{
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin-left: 10px;
+    width: 100%;
+    align-self: center;
+}
+
+
+/* list styles */
+
+
+
+ul {
+    list-style-image: url(../images/circle-purple.svg);
+    font-size:1.5rem;
+    line-height: 160%;
+    
+} 
+
+
+  

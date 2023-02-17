@@ -117,6 +117,8 @@
    
 }
 
+
+/* Circle Play Button */
 .circle{
     height: 70px;
     width: 70px;
@@ -124,6 +126,16 @@
     background-color: rgb(196 181 253);;
 
 }
+
+.circle:hover{
+    background-color:rgb(167 139 250); ;
+    cursor: pointer;
+}
+
+
+
+/* PlayButton Animation/Transition */
+
 
 hr{
     display: inline-block;

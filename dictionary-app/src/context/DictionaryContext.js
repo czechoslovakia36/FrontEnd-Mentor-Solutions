@@ -36,7 +36,7 @@ export const DictionaryProvider = ({children }) => {
             setResult(false)
         })
 }
-        return <DictionaryContext.Provider  value={{searchWord}}>
+        return <DictionaryContext.Provider  value={{searchWord,result,setResult}}>
         {children}
         </DictionaryContext.Provider>
 

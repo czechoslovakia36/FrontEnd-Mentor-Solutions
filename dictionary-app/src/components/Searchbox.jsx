@@ -2,8 +2,10 @@ import React, { useState,useContext } from 'react';
 
 import '../assets/css/searchbox.css'
 
-import {BiSearchAlt2} from 'react-icons/bi'
 
+// Importing Icons
+import {BiSearchAlt2} from 'react-icons/bi'
+import {CiSearch} from 'react-icons/ci'
 
 import DictionaryContext from '../context/DictionaryContext'
 
@@ -15,13 +17,17 @@ const Searchbox = () => {
 
     
 
-    const {searchWord}= useContext(DictionaryContext);
+    const {searchWord,result,setResult}= useContext(DictionaryContext);
+    
 
     const[text,setText]= useState('')
 
+    
     const handleChange = (e) => {
         console.log(e.target.value)
         setText(e.target.value)
+
+      
     }
 
  const handleSubmit= (e) =>{
@@ -31,6 +37,7 @@ const Searchbox = () => {
         toast.error("Please Enter a Word ")
     }
     else{
+        
         searchWord(text)
         setText('')
     }
@@ -54,7 +61,9 @@ const Searchbox = () => {
      
        />
 
-    <button type='submit'  ><BiSearchAlt2/></button>
+
+     
+    <span> <CiSearch/></span>
 
    
         

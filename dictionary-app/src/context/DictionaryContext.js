@@ -76,7 +76,6 @@ export const DictionaryProvider = ({children }) => {
                 
             }
             else{
-                console.log("else")
                 let {definitions:NewVerb,synonyms:synonymsVerb}= verb
                 definitionVerb=NewVerb
                

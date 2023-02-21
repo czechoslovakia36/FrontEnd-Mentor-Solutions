@@ -35,8 +35,6 @@ const SearchResult = () => {
     let {result,response,word,phonetic,definitions,synonyms,definitionsVerb,url,audioUrl}=useContext(DictionaryContext)
 
 
-    console.log(definitionsVerb)
-
 
     
    

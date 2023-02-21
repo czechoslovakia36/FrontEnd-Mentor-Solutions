@@ -21,18 +21,34 @@ import DictionaryContext from '../context/DictionaryContext';
 
 import { playAudio } from '../helper/playAudio';
 
+
+
 const SearchResult = () => {
 
-    const url = 'https://api.dictionaryapi.dev/media/pronunciations/en/keyboard-us.mp3'
 
     let arrayOfMeanings=['(etc. A set of keys used to operate typewriter,computer etc.)','a musical instrument that is played by means of a keyboard','a board on which keys for locks are hung']
 
     let arrayOfVerb=['to enter (data, text, etc.) by means of a keyboard']
 
-    const {result}=  useContext(DictionaryContext);
 
     
-    if(!result) {
+    let {result,response,word,phonetic,definitions,synonyms,definitionsVerb,url,audioUrl}=useContext(DictionaryContext)
+
+
+    console.log(definitionsVerb)
+
+
+    
+   
+    
+    
+    if (!result){
+        return null
+    }
+
+    else{
+
+        
         return (
 
         
@@ -40,12 +56,12 @@ const SearchResult = () => {
                 {/* First */}
                 <div className='flex-row space-between align-center'>
                     <div className='flex-col'>
-                         <span className='font-large' style={{display:'block'}}>Keyboard</span>
-                         <span className='block font-medium font-purple-dark'>/'ki:bo:d/</span>
+                         <span className='font-large' style={{display:'block'}}>{word}</span>
+                         <span className='block font-medium font-purple-dark'>{phonetic}</span>
                     </div>
                 
                    
-                    <span onClick={(e)=>playAudio(url)} id="play-button" className='circle flex-col align-center just-center'>
+                    <span onClick={(e)=>playAudio(audioUrl)} id="play-button" className='circle flex-col align-center just-center'>
                         <IconContext.Provider value={{size:"2em", color:"purple"}}>
                                 <BsPlay/>
                         </IconContext.Provider>
@@ -66,8 +82,8 @@ const SearchResult = () => {
                     <div className='ml-40'>
                    
                         <ul>
-                            {arrayOfMeanings.map(meaning => 
-                            <li className='meaning'>{meaning}</li>
+                            {definitions.map(meaning => 
+                            <li className='meaning'>{meaning.definition}</li>
                             )}
                         </ul>
                     </div>
@@ -78,7 +94,15 @@ const SearchResult = () => {
             
                 <div className='flex-row' style={{gap:'30px'}}>
                     <p className='font-normal font-grey'>Synonyms</p>
-                    <p className='font-normal font-purple-dark'>electronic keyboard</p>
+                    <p className='font-normal font-purple-dark'>
+                                {
+                                    synonyms.map(synonym =>
+                                        <>{synonym} &nbsp;</>
+                                        )
+                                }
+
+
+                    </p>
     
                             
                 </div>
@@ -97,8 +121,8 @@ const SearchResult = () => {
                     <div className='ml-40'>
                    
                         <ul>
-                            {arrayOfVerb.map(meaning => 
-                            <li className='meaning'>{meaning}</li>
+                            {definitionsVerb.map(meaning => 
+                            <li className='meaning'>{meaning.definition}</li>
                             )}
                         </ul>
                     </div>
@@ -113,7 +137,7 @@ const SearchResult = () => {
                 <div className='flex-row' style={{gap:'30px', marginTop:'30px'}}>
     
                     <p className='font-small font-grey'>Source</p>
-                    <p className='font-small'><a href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a><span className='align-center ml-5' style={{display:'inline-flex'}}><HiOutlineExternalLink/></span></p>
+                    <p className='font-small'><a target='_blank' href={url}>{url}</a><span className='align-center ml-5' style={{display:'inline-flex'}}><HiOutlineExternalLink/></span></p>
                     
                             
                 </div>
@@ -122,7 +146,11 @@ const SearchResult = () => {
                 
             </div>
         );
+
     }
+
+    
+        
        
     
 

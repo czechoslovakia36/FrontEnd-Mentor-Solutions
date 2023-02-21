@@ -3,6 +3,8 @@ import React, { useState,useContext } from 'react';
 import '../assets/css/searchbox.css'
 
 
+
+
 // Importing Icons
 import {BiSearchAlt2} from 'react-icons/bi'
 import {CiSearch} from 'react-icons/ci'
@@ -13,11 +15,14 @@ import { ToastContainer,toast  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
+
 const Searchbox = () => {
 
     
 
-    const {searchWord,result,setResult}= useContext(DictionaryContext);
+    const {searchWord,setResult}= useContext(DictionaryContext);
+    
     
 
     const[text,setText]= useState('')
@@ -34,12 +39,13 @@ const Searchbox = () => {
     e.preventDefault()
 
     if(text===''){
+        setResult(false)
         toast.error("Please Enter a Word ")
     }
     else{
         
         searchWord(text)
-        setText('')
+      //   setText('')
     }
 
  }  
@@ -63,7 +69,7 @@ const Searchbox = () => {
 
 
      
-    <span> <CiSearch/></span>
+    <button type='submit'> <CiSearch/></button>
 
    
         

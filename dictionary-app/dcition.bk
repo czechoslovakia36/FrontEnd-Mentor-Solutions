@@ -1,0 +1,93 @@
+import { createContext,useReducer,useState } from "react";
+import axios, { Axios } from 'axios'
+
+import dictionaryReducer from "./DictionaryReducer";
+const DictionaryContext = createContext()
+
+
+// const DICTIONARY_URL= process.env.DICTIONARY_URL
+
+// const DICTIONARY_URL= "https://api.dictionaryapi.dev/api/v2/entries/en/"
+
+
+axios.defaults.baseURL= "https://api.dictionaryapi.dev/api/v2/entries/en/"
+
+export const DictionaryProvider = ({children }) => {
+
+    const[result,setResult]= useState(false)
+
+    const[response,setResponse]= useState([])
+   
+
+    // Get details of the words from the api
+
+    const searchWord = async (text) =>{
+
+        try {
+            const params= text
+            const response = await axios.get(`/${params}`)
+
+            // console.log(response)
+            
+    
+            if (response.status==200){
+                    
+                // console.log(response.data)
+              
+                setResult(true)
+
+              
+                console.log('result',response.data)
+                console.log(response)
+            
+                
+            
+              
+                    let {response1,response2}=response.data
+                    console.log(typeof response1)
+                
+                    let {word,phonetic,phonetics,meanings}= response1
+                    console.log('--->')
+                
+                    console.log(audio)
+                
+                    console.log(word)
+                    console.log(phonetic)
+                    console.log(phonetics)
+                    console.log(meanings)
+                    
+                    let [phonetic1,phonetic2] = phonetics
+                
+                    let {text,audio}= phonetic2
+                
+                    var audioUrl = audio
+                
+                  
+           
+            
+               
+            
+            
+            }
+            
+        } catch (error) {
+            console.log(error)
+        }
+
+        // const params= new URLSearchParams({
+        //     word:text
+        // })
+      
+        
+        
+        
+    
+}
+        return <DictionaryContext.Provider  value={{searchWord,result,response}}>
+        {children}
+        </DictionaryContext.Provider>
+
+}
+
+
+export default DictionaryContext

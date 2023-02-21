@@ -5,6 +5,7 @@ import '../assets/css/searchresult.css'
 import { useContext } from 'react';
 
 
+
 // Importing ICONS
 import {BsPlay} from 'react-icons/bs'
 import {HiOutlineExternalLink}  from 'react-icons/hi'
@@ -37,11 +38,11 @@ const SearchResult = () => {
 
 
     
-   
-    
+
     
     if (!result){
-        return null
+        return 
+    
     }
 
     else{
@@ -49,8 +50,11 @@ const SearchResult = () => {
         
         return (
 
+            
+
         
             <div className='container-searchresult'>
+                
                 {/* First */}
                 <div className='flex-row space-between align-center'>
                     <div className='flex-col'>

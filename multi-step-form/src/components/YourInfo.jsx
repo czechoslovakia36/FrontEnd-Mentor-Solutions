@@ -1,8 +1,9 @@
 import React from 'react';
+import validate from '../helper/validateData';
 
 const YourInfo = () => {
 
-    const boolean=true;
+    
     return (
 
         
@@ -97,7 +98,7 @@ const YourInfo = () => {
                   
                     
                     <div className='mr-100 self-end'>
-                            <button className='btn '>Next</button>
+                            <button onClick={validate} className='btn '>Next</button>
                          </div>
 
                     

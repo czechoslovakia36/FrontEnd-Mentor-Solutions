@@ -1,5 +1,6 @@
 export default function validate(){
-    console.log("validate ")
+ 
+    
     let name= document.getElementById("name")
     let email= document.getElementById("email")
     let phoneNumber= document.getElementById("phonenumber")
@@ -55,4 +56,5 @@ export default function validate(){
 
 
     } 
+    
 }

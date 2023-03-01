@@ -1,10 +1,15 @@
 import React from 'react';
 
 const YourInfo = () => {
+
+    const boolean=true;
     return (
+
+        
+
         <>
         <div className='main-container flex justify-center align-center'>
-            <div className='container flex  pad-2'>
+            <div className=' container flex  pad-2'>
                 {/* [Left Part] */}
                 <div className='w-30  color-white flex bg-image justify-center'>
                        <div className='w-80  flex flex-col pad-1'>
@@ -57,27 +62,45 @@ const YourInfo = () => {
                        </div>
                 </div>
                 {/* [Right Part] */}
-                <div className='flex w-80 ml-100  color-marine-blue  '>
-                    <div className='flex m-auto'>
+                <div className='  flex  flex-col w-80 ml-100  color-marine-blue  '>
+                    <div className=' flex flex-col m-auto'>
+                        
+                        
+                        <div >
+                            <div className='header'>
+                            <h1>Personal Info</h1>
+                            <span style={{color:'grey'}}>Please provide your name,email address, and phone number</span>
+                            </div>
+                                <label>Name <span className='hide float-right font-bold error'>This Field is Required </span></label>
+                                <input type='text' id="name"></input>
+                                <label>Email Address <span className='hide float-right font-bold error'>This Field is Required </span></label>
+                                <input type='text' id="email"></input>
+                                <label >Phone Number  <span className='hide float-right font-bold error'>This Field is Required </span></label>
+                            
+                                <input type='text' id="phonenumber" placeholder='e.g. +1 234 567 890'></input>
+                            
+                                
+                        </div>
+                       
                         
                        
-                    <div >
-                        <div className='header'>
-                        <h1>Personal Info</h1>
-                        <span>Please provide your name,email address, and phone number</span>
-                        </div>
-                            <label>Name</label>
-                            <input type='text' id="name"></input>
-                            <label>Email Address</label>
-                            <input type='text' id="email"></input>
-                            <label>Phone Number</label>
-                            <input type='text' id="phonenumber" placeholder='e.g. +1 234 567 890'></input>
-                        </div>
+                      
+                      
+                       
                     
 
                         {/* <span className='block font-xxl fw-700 self-center'>Personal info</span> */}
+                        
 
                     </div>
+
+                  
+                    
+                    <div className='mr-100 self-end'>
+                            <button className='btn '>Next</button>
+                         </div>
+
+                    
                 </div>
             </div>
         </div>

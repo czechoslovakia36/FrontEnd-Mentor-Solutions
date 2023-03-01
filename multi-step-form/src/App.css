@@ -90,6 +90,7 @@ body {
 
 
 .container{
+    border-radius: 2%;
     width: 70vw ;
     height: 80vh;
     background-color: aliceblue;
@@ -98,6 +99,10 @@ body {
 
 /* MARGINS */
 
+
+.mr-100{
+    margin-right: 117px;
+}
 
 .m-auto{
     margin: auto;
@@ -114,7 +119,11 @@ body {
 
 
 .mt-10{
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.mt-100{
+    margin-top: 100px;
 }
 
 
@@ -204,6 +213,11 @@ body {
 /* fonts styles */
 
 
+.font-bold{
+    font-weight: bold;
+}
+
+
 .fw-400{
     font-weight: 400;
 }
@@ -281,7 +295,12 @@ input{
     padding: 5px;
     height: 2.5rem;
     width: 34vw;
-    border-radius: 2%;
+    border-radius: 0.2em;
+    border: 1px groove gray;
+ 
+    font-size: x-large;
+    color: var(--marine_blue)
+    
 }
 
 
@@ -290,4 +309,49 @@ input{
 
 .header {
     margin-bottom: 5vh;
+
+}
+
+/* FLOATS */
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+/* Error */
+
+.error{
+    color:var(--strawberry_red);
+    font-size:medium;
+
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+/* Button */
+
+.btn{
+    height: 5vh;
+    width:10vw;
+    background-color: var(--marine_blue);
+    color: #e0e0e0;
+    font-size: x-large;
+    border-radius: 8%;
+}
+
+.btn:hover{
+    background-color:whitesmoke;
+    color: var(--marine_blue);
 }

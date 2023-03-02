@@ -1,11 +1,14 @@
 
-import './App.css';
+
 
 import YourInfo from './components/YourInfo';
 
+import SelectPlan from './components/SelectPlan';
+import ChoosePlan from './components/ChoosePlan';
+
 function App() {
 
-  let value=1
+  let value=3
 
   switch(value){
     case 1:
@@ -15,9 +18,21 @@ function App() {
         </>
        
       );
+    case 2:
+      return (
+        <>
+        <SelectPlan/>
+        </>
+ 
 
-  }
-
+      )
+    case 3:
+      return (
+        <>
+        <ChoosePlan/>
+        </>
+      )
+}
 }
 
 export default App;

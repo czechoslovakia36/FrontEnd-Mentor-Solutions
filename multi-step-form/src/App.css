@@ -56,6 +56,10 @@ body {
     width: 80%;
 }
 
+
+.w-100{
+    width: 100%;
+}
 /* width */
 
 
@@ -73,7 +77,7 @@ body {
     padding: 2rem;
 }
 
-/* ----- */
+/* --FOR TESTING--- */
 
 .test-red{
     border: 2px solid red;
@@ -83,6 +87,11 @@ body {
     border: 2px solid green;
 }
 
+
+.test-yellow{
+    border: 2px solid yellow;
+}
+/*  */
 
 .main-container {
     height: 100vh;

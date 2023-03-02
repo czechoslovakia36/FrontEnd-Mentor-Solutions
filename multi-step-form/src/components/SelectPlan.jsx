@@ -3,6 +3,8 @@ import React from 'react';
 
 import validate from '../helper/validateData';
 
+import ChoosePlan from './ChoosePlan';
+
 const SelectPlan = () => {
        
     return (
@@ -11,7 +13,7 @@ const SelectPlan = () => {
 
         <>
         <div className='main-container flex justify-center align-center'>
-            <div className=' container flex  pad-2'>
+            <div className='container flex  pad-2'>
                 {/* [Left Part] */}
                 <div className='w-30  color-white flex bg-image justify-center'>
                        <div className='w-80  flex flex-col pad-1'>
@@ -64,8 +66,8 @@ const SelectPlan = () => {
                        </div>
                 </div>
                 {/* [Right Part] */}
-                <div className='  flex  flex-col w-80 ml-100  color-marine-blue  '> {/*Parent*/}
-                    <div className='flex flex-col'>
+                <div className='flex  flex-col w-80 ml-100  color-marine-blue  '> {/*Parent*/}
+                    <div className='flex  flex-col'>
                         
                         
                         <div >
@@ -74,15 +76,7 @@ const SelectPlan = () => {
                             <span style={{color:'grey'}}>You have option of monthly or yearly billing</span>
                         </div>
                         {/* Select Option */}
-                        <div>
-                            <select id="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="vw">VW</option>
-                                <option value="audi" selected>Audi</option>
-                            </select>
-                        </div>
-                               
+                     <ChoosePlan/>
                             
                                 
                     </div>
@@ -103,7 +97,7 @@ const SelectPlan = () => {
                     
                     <div className='mr-100 self-end'>
                             <button onClick={validate} className='btn '>Next</button>
-                         </div>
+                    </div>
 
                     
                 </div>

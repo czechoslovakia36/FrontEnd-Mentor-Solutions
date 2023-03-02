@@ -6,6 +6,7 @@ import YourInfo from './components/YourInfo';
 import SelectPlan from './components/SelectPlan';
 import ChoosePlan from './components/ChoosePlan';
 
+
 function App() {
 
   let value=3
@@ -32,6 +33,7 @@ function App() {
         <ChoosePlan/>
         </>
       )
+   
 }
 }
 

@@ -1,8 +1,11 @@
 .container2{
-    background-color:white;
-    height: 20vh;
-    width: 30vw;
-    border:2px solid red;
+    background-color: aliceblue;
+    
+   
+    height: 25vh;
+   
+    width: 25vw;
+  
     display: flex;
     /* justify-content: space-between; */
     padding: 5px;    
@@ -10,9 +13,13 @@
 }
 
 
-.container2> div {
+.sub-container2> div {
     margin: 8px;
 }
+
+/* .container2> div {
+    margin: 8px;
+} */
 
 
 .sub-container{
@@ -37,6 +44,36 @@
    box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
    inset 5px 5px 5px rgba(0,0,0,0.5);
 }
+
+
+
+/* Toggle Switch */
+
+
+.toggle {
+    cursor: pointer;
+    
+    
+}
+
+
+
+
+
+.toggle-switch{
+    
+    background: #ccc;
+    display: inline-block;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+
+
 
 @media screen and (max-width:300px) {
     .container2{

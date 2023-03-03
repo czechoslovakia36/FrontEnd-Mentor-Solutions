@@ -1,6 +1,10 @@
 import React from 'react';
 import validate from '../helper/validateData';
 
+import {Link} from 'react-router-dom'
+
+import '../App.css'
+
 const YourInfo = () => {
 
     
@@ -98,6 +102,7 @@ const YourInfo = () => {
                   
                     
                     <div className='mr-100 self-end'>
+                            <Link to="/selectplan" className='btn' onClick={validate}>Next</Link>
                             <button onClick={validate} className='btn '>Next</button>
                          </div>
 

@@ -50,7 +50,7 @@ const ChoosePlan = () => {
         <>
         <div className='container2 flex flex-col'>
 
-        <div className='sub-container2 flex align-center justify-center'>
+        <div className='sub-container2 flex align-center '>
         
             <div className='sub-container'>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g fill="none" fill-rule="evenodd"><circle cx="20" cy="20" r="20" fill="#FFAF7E"/><path fill="#FFF" fill-rule="nonzero" d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"/></g></svg>
@@ -70,13 +70,14 @@ const ChoosePlan = () => {
         </div>
 {/* Toggler button */}
       
-                    <div  className='flex justify-center w-100' >
+                    <div  className=' flex  w-100 align-center' >
                        
                     
                         
-                        <div className='toggle'>
-                                <input className='toggle-checkbox' type="checkbox"></input>
-                                <div className="test-red toggle-switch"></div>
+                        <div className='toggle flex justify-center align-center'>
+                            <div className='font-large font-bold text-center'>Monthly</div>
+                            <input type="checkbox" id="switch" /><label id="label" for="switch">Toggle</label>
+                            <div className='font-large font-bold text-center'>Yearly</div>
                         </div>
                    
             

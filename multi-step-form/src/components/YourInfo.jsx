@@ -101,16 +101,16 @@ const YourInfo = () => {
 
                   
                     
-                    <div className='mr-100 self-end'>
-                            <Link to="/selectplan" className='btn' onClick={validate}>Next</Link>
-                            <button onClick={validate} className='btn '>Next</button>
+                    <div className='mr-100 self-end '>
+                            
+                            <button onClick={validate} className='btn '><Link to="/selectplan" className='linkbutton' onClick={validate}>Next</Link></button>
                          </div>
 
                     
                 </div>
             </div>
         </div>
-           
+    
         </>
     );
 }

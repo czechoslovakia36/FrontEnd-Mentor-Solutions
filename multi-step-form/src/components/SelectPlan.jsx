@@ -5,6 +5,8 @@ import validate from '../helper/validateData';
 
 import ChoosePlan from './ChoosePlan';
 
+import { Link } from 'react-router-dom';
+
 const SelectPlan = () => {
        
     return (
@@ -15,8 +17,8 @@ const SelectPlan = () => {
         <div className='main-container flex justify-center align-center'>
             <div className='container flex  pad-2'>
                 {/* [Left Part] */}
-                <div className='w-30  color-white flex bg-image justify-center'>
-                       <div className='w-80  flex flex-col pad-1'>
+                <div className='w-30   color-white flex bg-image justify-center'>
+                       <div className='w-80   flex flex-col pad-1'>
                                 <div className='step'>
                                     <div className='flex align-center'>
                                           <div className='flex circle text-center justify-center align-center '>
@@ -66,8 +68,10 @@ const SelectPlan = () => {
                        </div>
                 </div>
                 {/* [Right Part] */}
-                <div className='flex  flex-col w-80 ml-100  color-marine-blue  '> {/*Parent*/}
-                    <div className='flex  flex-col'>
+
+        <div className='flex flex-col justify-between w-80 ml-100'>
+                <div className='flex  flex-col w-100 ml-100   color-marine-blue  '> {/*Parent*/}
+                    <div className=' red-green w-100 flex  flex-col'>
                         
                         
                         <div >
@@ -94,13 +98,26 @@ const SelectPlan = () => {
                     </div>
 
                   
-                    
-                    <div className='mr-100 self-end'>
-                            <button onClick={validate} className='btn '>Next</button>
-                    </div>
+                   
 
                     
                 </div>
+
+
+                <div className='flex flex-row justify-between'>
+                    <div className='w-100'>
+                    <button onClick={validate} className='btn '><Link to="/" className='linkbutton' >Go Back</Link></button>
+  
+                    </div>
+                <div className='mr-100 self-end'>
+                            <button onClick={validate} className='btn '>Next</button>
+                    </div>
+
+                </div>
+                 
+               
+                </div>
+                
             </div>
         </div>
            

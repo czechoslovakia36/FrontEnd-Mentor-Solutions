@@ -70,7 +70,7 @@ const ChoosePlan = () => {
         </div>
 {/* Toggler button */}
       
-                    <div  className=' flex  w-100 align-center' >
+                    <div  className=' flex  w-100 align-center mt-30' >
                        
                     
                         

@@ -13,6 +13,14 @@ html{
 }
 
 
+/*CUSTOM BUTTON */
+
+.linkbutton {
+    border: 2px solid pink;
+    height: 5rem;
+}
+
+
 body {
     font-family: 'Ubuntu', sans-serif;
     background-color: #B9D9EB;
@@ -61,6 +69,13 @@ body {
     width: 100%;
 }
 /* width */
+
+
+/* HEIGHT */
+
+.mx-width{
+    max-width: 100%;
+}
 
 
 
@@ -131,9 +146,27 @@ body {
     margin-top: 10px;
 }
 
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+
 .mt-100{
     margin-top: 100px;
 }
+
 
 
 
@@ -174,6 +207,13 @@ body {
 .justify-center{
     justify-content: center;
 }
+
+.justify-between{
+    justify-content: space-between;
+}
+
+
+
 
 .flex-col{
     flex-direction: column;

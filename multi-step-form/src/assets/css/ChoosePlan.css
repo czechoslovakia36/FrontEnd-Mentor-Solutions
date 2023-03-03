@@ -6,7 +6,7 @@
    
     height: 40vh;
    
-    width: 35vw;
+    width: 30vw;
 
     
  
@@ -22,7 +22,7 @@
 }
 
 .sub-container2> div {
-    margin: 8px;
+    margin-right: 8px;
 }
 
 /* .container2> div {
@@ -33,7 +33,7 @@
 .sub-container{
     display: flex;
     border: 1px groove grey;
-    height: 12em;
+    height: 13em;
     width: 10.5em;
 
     padding: 9px;
@@ -58,7 +58,7 @@
 
 
 .toggle{
-    width: 90%;
+    width: 100%;
     border: 2px transparent hsl(206, 94%, 87%);
     background-color: hsl(206, 94%, 87%,0.2);
     

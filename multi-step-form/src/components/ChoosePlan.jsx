@@ -4,6 +4,9 @@ import { useEffect } from 'react';
 import '../assets/css/ChoosePlan.css'
 
 
+import  '../assets/css/ToggleSwitch.css'
+
+
 
 
 
@@ -76,7 +79,7 @@ const ChoosePlan = () => {
                         
                         <div className='toggle flex justify-center align-center'>
                             <div className='font-large font-bold text-center'>Monthly</div>
-                            <input type="checkbox" id="switch" /><label id="label" for="switch">Toggle</label>
+                            <input className='toggleswitch' type="checkbox" id="switch" /><label id="label" for="switch">Toggle</label>
                             <div className='font-large font-bold text-center'>Yearly</div>
                         </div>
                    

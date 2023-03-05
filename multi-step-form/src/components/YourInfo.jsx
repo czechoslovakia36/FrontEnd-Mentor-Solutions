@@ -3,7 +3,7 @@ import validate from '../helper/validateData';
 
 import {Link} from 'react-router-dom'
 
-import '../App.css'
+import '../assets/css/global.css'
 
 const YourInfo = () => {
 
@@ -77,12 +77,12 @@ const YourInfo = () => {
                             <span style={{color:'grey'}}>Please provide your name,email address, and phone number</span>
                             </div>
                                 <label>Name <span className='hide float-right font-bold error'>This Field is Required </span></label>
-                                <input type='text' id="name"></input>
+                                <input className='inputtext' type='text' id="name"></input>
                                 <label>Email Address <span className='hide float-right font-bold error'>This Field is Required </span></label>
-                                <input type='text' id="email"></input>
+                                <input className='inputtext' type='text' id="email"></input>
                                 <label >Phone Number  <span className='hide float-right font-bold error'>This Field is Required </span></label>
                             
-                                <input type='text' id="phonenumber" placeholder='e.g. +1 234 567 890'></input>
+                                <input  className='inputtext'  type='text' id="phonenumber" placeholder='e.g. +1 234 567 890'></input>
                             
                                 
                         </div>

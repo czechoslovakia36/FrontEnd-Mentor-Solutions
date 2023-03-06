@@ -95,8 +95,10 @@ const AddOn = () => {
                        </div>
                 </div>
                 {/* [Right Part] */}
-                <div className='w-80 ml-100  flex flex-col color-marine-blue  '>
-                            <div className='header'>
+                <div className='w-80 ml-100  flex flex-col color-marine-blue justify-between  '>
+                         {/* Right Upper  */}
+                         <div> 
+                         <div className='header'>
                                 <h1>Pick add-ons</h1>
                                 <span style={{color:'grey'}}>Add-ons helps enhance your gaming experience.</span>
                             </div>
@@ -166,14 +168,42 @@ const AddOn = () => {
                                           
                                          
                                     </div>
+
+                                    
                                     
                                
                                  
 
                                 </div>
+
+                   
                             </div>
+                         </div>
+
+                        {/* Right Lower */}
+                         <div>
+                         <div className='flex flex-row justify-between align-end'>
+                    <div className='w-100'>
+                    <button onClick={validate} className='btn '><Link to="/" className='linkbutton' >Go Back</Link></button>
+  
+                    </div>
+                <div className='mr-100 self-end'>
+                            <button onClick={validate} className='btn '>Next</button>
+                    </div>
+                </div>
+                         </div>
+
+
+                         
+
+
+
+                       
 
                 </div>
+
+                
+             
             </div>
         </div>
         </>

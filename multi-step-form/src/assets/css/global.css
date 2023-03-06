@@ -187,6 +187,8 @@ body {
 /* flex */
 
 
+
+
 .self.center{
     align-self: center;
 }
@@ -215,6 +217,11 @@ body {
 
 .flex-wrap{
     flex-wrap: wrap;
+}
+
+
+.align-end {
+    align-items: end;
 }
 
 .align-center{

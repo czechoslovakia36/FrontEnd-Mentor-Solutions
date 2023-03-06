@@ -1,3 +1,14 @@
+/* Custom Checkbox */
+
 .checkbox{
-    
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.selectbox{
+    border: 1px groove grey;
+    padding: 0.4rem;
+ 
+
 }

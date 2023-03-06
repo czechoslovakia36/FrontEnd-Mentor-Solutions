@@ -16,9 +16,7 @@ const ChoosePlan = () => {
     
 
     useEffect(()=>{
-        console.log("helo")
-        
-
+      
         let divTag= Array.from(document.getElementsByClassName('sub-container'));
 
         divTag.map(tag=>{

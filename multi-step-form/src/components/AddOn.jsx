@@ -35,7 +35,7 @@ const AddOn = () => {
     
       
 
-        console.log(addOns)
+        console.log(addOns.sort())
 
     }
 

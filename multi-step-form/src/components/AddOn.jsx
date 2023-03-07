@@ -184,11 +184,11 @@ const AddOn = () => {
                          <div>
                          <div className='flex flex-row justify-between align-end'>
                     <div className='w-100'>
-                    <button onClick={validate} className='btn '><Link to="/" className='linkbutton' >Go Back</Link></button>
+                    <button onClick={validate} className='btn '><Link to="/selectplan" className='linkbutton' >Go Back</Link></button>
   
                     </div>
                 <div className='mr-100 self-end'>
-                            <button onClick={validate} className='btn '>Next</button>
+                            <button onClick={validate} className='btn '><Link to="/summary" className='linkbutton' >Next</Link></button>
                     </div>
                 </div>
                          </div>

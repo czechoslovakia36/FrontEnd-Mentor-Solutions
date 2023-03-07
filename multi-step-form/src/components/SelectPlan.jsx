@@ -110,7 +110,7 @@ const SelectPlan = () => {
   
                     </div>
                 <div className='mr-100 self-end'>
-                            <button onClick={validate} className='btn '>Next</button>
+                            <button onClick={validate} className='btn '><Link to="/addon" className='linkbutton' >Next</Link></button>
                     </div>
 
                 </div>

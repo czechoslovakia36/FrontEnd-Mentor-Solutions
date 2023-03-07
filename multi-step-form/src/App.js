@@ -8,6 +8,8 @@ import ChoosePlan from './components/ChoosePlan';
 
 import AddOn from './components/AddOn'
 
+import Summary from './components/Summary'
+
 
 export default function App(){
   return (
@@ -17,6 +19,7 @@ export default function App(){
               <Route exact path="selectplan" element={<SelectPlan />}></Route>
               <Route  exact path="chooseplan" element={<ChoosePlan/>}></Route>
               <Route  exact path="addon" element={<AddOn/>}></Route>
+              <Route exact path="summary" element={<Summary/>}> </Route>
 
              
        

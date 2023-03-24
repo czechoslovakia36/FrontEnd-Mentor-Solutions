@@ -12,7 +12,16 @@ import '../assets/css/addon.css'
 
 import { useState } from 'react';
 
+
+import { useContext } from 'react';
+
+import stepsContext from '../Context/stepsContext/StepContext'
+
+
+
 const AddOn = () => {
+
+    // const {initialStep} = useContext(stepsContext);
 
     let addOns= new Array();
 
@@ -41,6 +50,7 @@ const AddOn = () => {
 
     return (
         <>
+    
          <div className='main-container flex justify-center align-center'>
             <div className=' container flex  pad-2'>
                 {/* [Left Part] */}
@@ -70,7 +80,7 @@ const AddOn = () => {
                                 </div>
                                 <div className='step'>
                                     <div className='flex align-center'>
-                                          <div className='flex circle text-center justify-center align-center '>
+                                          <div className='flex circle text-center justify-center align-center  bg-light-blue font-bold '>
                                                <p className='block'>3</p>
                                                
                                                

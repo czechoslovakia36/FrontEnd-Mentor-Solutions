@@ -1,11 +1,22 @@
 import React from 'react';
 import validate from '../helper/validateData';
 
+import { useEffect } from 'react';
+
 import {Link} from 'react-router-dom'
 
 import '../assets/css/global.css'
 
+import stepContext from '../Context/stepsContext/StepContext';
+
 const YourInfo = () => {
+
+   
+
+
+    useEffect(() => {
+     
+    }, []);
 
     
     return (
@@ -20,7 +31,7 @@ const YourInfo = () => {
                        <div className='w-80  flex flex-col pad-1'>
                                 <div className='step'>
                                     <div className='flex align-center'>
-                                          <div className='flex circle text-center justify-center align-center '>
+                                          <div className='flex circle text-center justify-center align-center  bg-light-blue font-bold '>
                                                <p className='block'>1</p>
                                                
                                                
@@ -31,7 +42,7 @@ const YourInfo = () => {
                                 </div>
                                 <div className='step'>
                                     <div className='flex align-center'>
-                                          <div className='flex circle text-center justify-center align-center '>
+                                          <div className='flex circle text-center justify-center align-center'>
                                                <p className='block'>2</p>
                                                
                                                

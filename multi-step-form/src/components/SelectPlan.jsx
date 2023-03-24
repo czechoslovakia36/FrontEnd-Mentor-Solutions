@@ -32,7 +32,7 @@ const SelectPlan = () => {
                                 </div>
                                 <div className='step'>
                                     <div className='flex align-center'>
-                                          <div className='flex circle text-center justify-center align-center '>
+                                          <div className='flex circle text-center justify-center align-center  bg-light-blue font-bold'>
                                                <p className='block'>2</p>
                                                
                                                

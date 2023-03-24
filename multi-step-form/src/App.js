@@ -11,8 +11,12 @@ import AddOn from './components/AddOn'
 import Summary from './components/Summary'
 
 
+
+
+
 export default function App(){
   return (
+    <stepProvider>
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<YourInfo />}> </Route>
@@ -25,6 +29,7 @@ export default function App(){
        
       </Routes>
     </BrowserRouter>
+    </stepProvider>
   )
 }
 
